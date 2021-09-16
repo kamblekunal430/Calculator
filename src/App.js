@@ -12,9 +12,17 @@ function App() {
     setResult("");
   };
 
-  const btnDel = () => {};
+  const btnDel = () => {
+    setResult(result.slice(0, -1));
+  };
 
-  const btnResult = () => {};
+  const btnResult = () => {
+    try {
+      setResult(eval(result).toString());
+    } catch (err) {
+      setResult("Invalid Operation");
+    }
+  };
 
   return (
     <>
@@ -31,7 +39,7 @@ function App() {
           <button className="highlight" onClick={btnDel} id="del">
             Del
           </button>
-          <button name="/" onClick={btnClick}>
+          <button className="highlight" name="/" onClick={btnClick}>
             /
           </button>
           <button name="7" onClick={btnClick}>
@@ -43,8 +51,8 @@ function App() {
           <button name="9" onClick={btnClick}>
             9
           </button>
-          <button name="*" onClick={btnClick}>
-            *
+          <button className="highlight" name="*" onClick={btnClick}>
+            x
           </button>
           <button name="4" onClick={btnClick}>
             4
@@ -55,7 +63,7 @@ function App() {
           <button name="6" onClick={btnClick}>
             6
           </button>
-          <button name="-" onClick={btnClick}>
+          <button className="highlight" name="-" onClick={btnClick}>
             -
           </button>
           <button name="1" onClick={btnClick}>
@@ -67,7 +75,7 @@ function App() {
           <button name="3" onClick={btnClick}>
             3
           </button>
-          <button name="+" onClick={btnClick}>
+          <button className="highlight" name="+" onClick={btnClick}>
             +
           </button>
           <button name="0" onClick={btnClick}>
