@@ -10,6 +10,7 @@ h1 {
   font-size: 45px;
   color: white;
   height: max-content;
+  margin: 10px 0px;
 }
 
 .container {
@@ -32,7 +33,7 @@ h1 {
 }
 
 input[type="text"] {
-  height: 75px;
+  height: 100px;
   width: 249px;
   background-color: black;
   border: solid white 1px;
