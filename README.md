@@ -2,7 +2,7 @@
 
 ### Calculator app created using ReactJS, testing the application, and deploy the same to AWS using Docker.
 
-### The app has been deployed on AWS and can be accessed using IP 13.235.16.127
+### The app has been deployed on AWS and can be accessed using IP 13.235.16.127 or http://ec2-13-235-16-127.ap-south-1.compute.amazonaws.com/
 
 # Getting Started with Create React App
 
